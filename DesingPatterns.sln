@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibilityDesignPattern", "ChainOfResponsibilityDesignPattern", "{AF91CA9E-3A17-4BA7-BF5E-6778447E548D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatternChainOfResponsibility", "ChainOfResponsibilityDesignPattern\DesingPatternChainOfResponsibility\DesingPatternChainOfResponsibility.csproj", "{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CQRSDesignPattern", "CQRSDesignPattern", "{FBC29D92-735A-40FF-B64A-C0F6119CCA3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.CQRS", "CQRSDesignPattern\DesignPattern.CQRS\DesignPattern.CQRS.csproj", "{24C3B812-46B8-441A-89DD-7E06EBB79A62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C3B812-46B8-441A-89DD-7E06EBB79A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C3B812-46B8-441A-89DD-7E06EBB79A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C3B812-46B8-441A-89DD-7E06EBB79A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C3B812-46B8-441A-89DD-7E06EBB79A62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C1041A3-5213-4EF2-AEE9-E53853E6C6E4} = {AF91CA9E-3A17-4BA7-BF5E-6778447E548D}
+		{24C3B812-46B8-441A-89DD-7E06EBB79A62} = {FBC29D92-735A-40FF-B64A-C0F6119CCA3C}
+	EndGlobalSection
+EndGlobal

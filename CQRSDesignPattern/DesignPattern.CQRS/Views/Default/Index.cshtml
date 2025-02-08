@@ -1,0 +1,57 @@
+﻿@model List<DesignPattern.CQRS.CQRSPattern.Results.GetProductQueryResult>
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<head>
+    <style>
+
+   body{
+       background-color:black;
+       color:White;
+   }
+
+        .table-bordered > :not(caption) > * > * {
+            border-width: 0 var(--bs-border-width);
+            background-color: cornflowerblue;
+        }
+
+</style>
+
+</head>
+
+<div class="container">
+    <table class="table table-bordered">
+
+        <tr>
+            <th>#</th>
+            <th>İsim</th>
+            <th>Stok</th>
+            <th>Fiyat</th>
+            <th>Açıklama</th>
+            <th>Durum</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.Name</td>
+                <td>@item.Stock</td>
+                <td>@item.Price</td>
+                <td>@item.Description</td>
+                <td>@item.Status</td>
+                <td><a href="/Default/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Default/UpdateProduct/@item.ProductId" class="btn btn-primary">Güncelle</a></td>
+            </tr>
+        }
+
+    </table>
+
+    <button href="/Default/AddProduct" class="btn btn-secondary">Ürün Ekle</button>
+</div>
