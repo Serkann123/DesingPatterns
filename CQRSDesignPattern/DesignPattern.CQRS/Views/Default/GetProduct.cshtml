@@ -1,4 +1,4 @@
-﻿@model DesignPattern.CQRS.CQRSPattern.Commands.CreateProductCommand
+﻿@model DesignPattern.CQRS.CQRSPattern.Results.GetProductByIdQueryResult;
 
 @{
     Layout = null;
@@ -69,26 +69,24 @@
 </header>
 
 <div class="container">
-    <br />
-    <form method="post">
+
+    <form asp-action="UpdateProduct" method="post">
+
+        <label>Id</label>
+        <input type="text" asp-for="ProductId" />
 
         <label>Ürün Adı</label>
         <input type="text" asp-for="Name" />
-        <br />
 
         <label>Ürün Açıklaması</label>
-        <input type="text" asp-for="Description" />
-        <br />
+        <input type="text" asp-for="Description">
 
         <label>Ürün Fiyatı</label>
         <input type="text" asp-for="Price" />
-        <br />
 
         <label>Stok</label>
-        <input type="text" asp-for="Stock" />
-        <br />
+        <input type="text" asp-for="Stock" /> 
 
-        <button class="btn btn-dark">Ürün Ekle</button>
+        <button type="submit">Güncelle</button>
     </form>
-
 </div>

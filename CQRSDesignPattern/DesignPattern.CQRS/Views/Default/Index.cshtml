@@ -33,6 +33,7 @@
             <th>Fiyat</th>
             <th>Açıklama</th>
             <th>Durum</th>
+            <th>Getir</th>
             <th>Sil</th>
             <th>Güncelle</th>
         </tr>
@@ -46,12 +47,13 @@
                 <td>@item.Price</td>
                 <td>@item.Description</td>
                 <td>@item.Status</td>
-                <td><a href="/Default/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
-                <td><a href="/Default/UpdateProduct/@item.ProductId" class="btn btn-primary">Güncelle</a></td>
+                <td><a href="/Default/GetProduct/@item.ProductId" class="btn btn-success">Getir</a></td>
+                <td><a href="/Default/RemoveProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Default/GetProduct/@item.ProductId" class="btn btn-primary">Güncelle</a></td>
             </tr>
         }
 
     </table>
 
-    <button href="/Default/AddProduct" class="btn btn-secondary">Ürün Ekle</button>
+    <a href="/Default/AddProduct" class="btn btn-secondary">Ürün Ekle</a>
 </div>
