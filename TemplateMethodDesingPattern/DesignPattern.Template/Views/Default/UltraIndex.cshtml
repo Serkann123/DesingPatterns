@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<head>
+    <style>
+
+        body {
+            background-color: black;
+            color: White;
+        }
+
+        .table-bordered > :not(caption) > * > * {
+            border-width: 0 var(--bs-border-width);
+            background-color: cornflowerblue;
+        }
+
+    </style>
+
+</head>
+
+<div class="container">
+    <br />
+
+    <h3>Plan: @ViewBag.v1</h3>
+    <h3>Kişi Sayısı: @ViewBag.v2</h3>
+    <h3>Fiyat: @ViewBag.v3</h3>
+    <h3>İçerik: @ViewBag.v4</h3>
+    <h3>Çözünürlük: @ViewBag.v5</h3>
+
+    <a href="/Default/StandartIndex/" class="btn btn-secondary">Standart Plan</a>
+    <a href="/Default/BasicIndex/" class="btn btn-primary">Basic Plan</a>
+</div>
