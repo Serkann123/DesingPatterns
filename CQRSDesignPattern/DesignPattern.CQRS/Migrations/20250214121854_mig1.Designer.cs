@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DesignPattern.CQRS.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20250208175029_mig2")]
-    partial class mig2
+    [Migration("20250214121854_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
