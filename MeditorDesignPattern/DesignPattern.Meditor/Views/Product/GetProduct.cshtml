@@ -1,0 +1,46 @@
+﻿@model DesignPattern.Meditor.MeditorPattern.Results.GetProductByIdQueryResult
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br>
+    <br />
+
+    <form asp-action="UpdateProduct" method="post">
+
+        <label>Ürün Id</label>
+        <input type="text" class="form-control" asp-for="ProductId" />
+        <br />
+
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="ProductName" />
+        <br />
+
+        <label>Ürün Fiyatı</label>
+        <input type="text" class="form-control" asp-for="ProductPrice" />
+        <br />
+
+        <label>Ürün Sayısı</label>
+        <input type="text" class="form-control" asp-for="ProductStock" />
+        <br />
+
+        <label>Ürün Stok Türü</label>
+        <input type="text" class="form-control" asp-for="ProductStockType" />
+        <br />
+
+
+        <label>Ürün Kategorisi</label>
+        <input type="text" class="form-control" asp-for="ProductCategory" />
+        <br />
+
+        @if (ViewBag.ShowUpdateButton == true)
+        {
+            <button class="btn btn-outline-secondary">Ürünü Güncelle</button>
+        }
+
+    </form>
+</div>
