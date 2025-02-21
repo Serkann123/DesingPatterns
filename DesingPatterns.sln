@@ -23,6 +23,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MeditorDesignPattern", "Med
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Meditor", "MeditorDesignPattern\DesignPattern.Meditor\DesignPattern.Meditor.csproj", "{757717A7-8508-4045-B233-96815463227F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitOfWorkDesignPattern", "UnitOfWorkDesignPattern", "{90240A0C-5A4E-4876-A387-8010BEF07B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.UnitOfWork", "UnitOfWorkDesignPattern\DesignPattern.UnitOfWork\DesignPattern.UnitOfWork.csproj", "{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.EntityLayer", "UnitOfWorkDesignPattern\DessignPattern.EntityLayer\DesignPattern.EntityLayer.csproj", "{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.DataAccessLayer", "UnitOfWorkDesignPattern\DesignPattern.DataAccessLayer\DesignPattern.DataAccessLayer.csproj", "{3770B55B-41B7-4591-AA2A-C458FFA8512D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.BusinessLayer", "UnitOfWorkDesignPattern\DesignPattern.BusinessLayer\DesignPattern.BusinessLayer.csproj", "{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +59,22 @@ Global
 		{757717A7-8508-4045-B233-96815463227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{757717A7-8508-4045-B233-96815463227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{757717A7-8508-4045-B233-96815463227F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3770B55B-41B7-4591-AA2A-C458FFA8512D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3770B55B-41B7-4591-AA2A-C458FFA8512D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3770B55B-41B7-4591-AA2A-C458FFA8512D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3770B55B-41B7-4591-AA2A-C458FFA8512D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,5 +85,9 @@ Global
 		{DDAB7C1E-58D4-46E2-8702-A9E55E1F11A9} = {EAB92521-C329-4EF9-B17C-7EE1D14EBC35}
 		{7E02871D-EAAC-44AA-8DE5-C5DB0A3B577B} = {22C31832-732D-40B8-9DA2-C61A0D4BD5EE}
 		{757717A7-8508-4045-B233-96815463227F} = {2E9ACF11-CC07-453A-B3E5-16D6B778AFB8}
+		{E1CB8C1D-42F1-49C4-B8DF-893A7819A14B} = {90240A0C-5A4E-4876-A387-8010BEF07B59}
+		{852DFB8A-EB24-4EC3-ADAF-FE09A0CB4A2C} = {90240A0C-5A4E-4876-A387-8010BEF07B59}
+		{3770B55B-41B7-4591-AA2A-C458FFA8512D} = {90240A0C-5A4E-4876-A387-8010BEF07B59}
+		{F3D54A6A-5FD0-418A-A01F-9CD8D0D20489} = {90240A0C-5A4E-4876-A387-8010BEF07B59}
 	EndGlobalSection
 EndGlobal
